@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-foreground: #fafafa;
+  --color-primary: #8b5cf6;
+  --color-primary-foreground: #ffffff;
+  --color-card: #111111;
+  --color-card-foreground: #fafafa;
+  --color-border: #222222;
+  --color-muted: #262626;
+  --color-muted-foreground: #a3a3a3;
+  --color-accent: #1e1b4b;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    color-scheme: dark;
+  }
+
+  :root.light {
+    --background: #ffffff;
+    --foreground: #09090b;
+    --color-primary: #7c3aed;
+    --color-primary-foreground: #ffffff;
+    --color-card: #f4f4f5;
+    --color-card-foreground: #09090b;
+    --color-border: #e4e4e7;
+    --color-muted: #f4f4f5;
+    --color-muted-foreground: #71717a;
+    --color-accent: #f3e8ff;
+    color-scheme: light;
+  }
+  
+  html, body {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased font-sans selection:bg-primary/30 selection:text-primary;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-[var(--background)]/60 backdrop-blur-md border border-[var(--foreground)]/10;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-fuchsia-400;
+  }
+}
+
+/* Lenis recommended css */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
