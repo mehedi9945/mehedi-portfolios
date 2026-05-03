@@ -16,19 +16,10 @@ export default function About() {
             <div className="h-px bg-foreground/20 flex-1"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 text-muted-foreground text-lg leading-relaxed">
+          <div className="text-muted-foreground text-lg leading-relaxed text-justify">
             <div className="space-y-6">
               <p>
-                My programming journey started back in high school when I first discovered the magic of turning lines of code into interactive web pages. Since then, I've been completely hooked on web development.
-              </p>
-              <p>
-                I enjoy creating software that bridges the gap between complex backend logic and intuitive, beautiful user interfaces. My goal is always to build applications that are scalable, accessible, and deliver exceptional user experiences.
-              </p>
-            </div>
-            
-            <div className="space-y-6">
-              <p>
-                When I'm not in front of a computer screen, you can usually find me out exploring nature, painting, or trying out new coffee shops in the city. I believe that having hobbies outside of tech helps keep my mind fresh and creative.
+                I am a passionate web developer focused on building modern, responsive, and user-friendly web applications. I specialize in React and Next.js for frontend development and enjoy creating smooth and interactive user experiences. I also work with Node.js, Express, and MongoDB for backend development. I am continuously learning and improving my skills through hands-on projects and real-world practice. I love turning ideas into functional and visually appealing web solutions. Problem-solving and writing clean code are my key strengths. My goal is to grow as a full-stack developer and contribute to impactful digital products. I am always open to learning new technologies and improving my development workflow.
               </p>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function Hero() {
           <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground min-h-[40px]">
             I am a&nbsp;
             <Typewriter
-              words={['MERN Stack Developer']}
+              words={['MERN Stack Developer' , 'Frontend Developer']}
               loop={true}
               cursor
               cursorStyle='_'
@@ -39,7 +39,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap items-center gap-4 mt-6">
             <a
-              href="/resume.pdf"
+              href="/public/resume/Mehedi-Resume.pdf"
               download
               className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
             >
@@ -52,9 +52,6 @@ export default function Hero() {
               </a>
               <a href="https://www.linkedin.com/in/mehedi9945/" target="_blank" rel="noreferrer" className="p-3 rounded-full border border-foreground/10 hover:bg-foreground/5 transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-3 rounded-full border border-foreground/10 hover:bg-foreground/5 transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>

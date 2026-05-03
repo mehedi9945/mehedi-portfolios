@@ -20,9 +20,6 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/mehedi9945/" target="_blank" rel="noreferrer" className="p-2 rounded-full glass hover:bg-foreground/10 transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-2 rounded-full glass hover:bg-foreground/10 transition-colors">
-            <Twitter size={20} />
-          </a>
         </div>
       </div>
     </footer>
